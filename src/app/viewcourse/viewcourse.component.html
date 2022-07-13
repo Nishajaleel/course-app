@@ -1,99 +1,23 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3">
-
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://edusera.org/wp-content/uploads/2021/06/Top-10-video-tutorial-to-learn-C-Programming.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">PROGRAMMING IN C</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
+          <div class="row">
+            <div  *ngFor="let i of data" class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{i._id}}</h5>
+                  <p class="card-text">{{i.courseTitle}}</p>
+                  <p class="card-text">{{i.courseDescription}}</p>
+                  <p class="card-text">{{i.courseDuration}}</p>
+                  <p class="card-text">{{i.courseDate}}</p>
+                  <p class="card-text">{{i.courseVenue}}</p>
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://5.imimg.com/data5/AD/OX/QI/SELLER-9214050/4896-fundamentals-of-computer-book-500x500.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">COMPUTER FUNDAMENTALS</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2022/01/Python-programming-india.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">PYTHON</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://c8.alamy.com/comp/F2MXX6/html-word-meaning-hypertext-markup-language-and-hypertext-markup-language-F2MXX6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">HTML</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/03/Introduction-To-DBMS-2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">DBMS</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://www.knowelectronic.com/wp-content/uploads/2021/12/Digital-Electronics.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Digital Electronics</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://thehackernews.com/images/-PVsiTY_P80o/XXI-P17bzYI/AAAAAAAA0_w/QmGHPdewmYo4qrlfiJd_IAKsfuVYmec1gCLcBGAs/s728-e100/php-programming-language.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">PHP</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://www.datocms-assets.com/14946/1627286560-sql-databases.png?auto=format" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">SQL</h5>
-
-                          <a href="#" class="btn btn-primary"> Purchasing</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://content.techgig.com/photo/83117460.cms" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">JAVA</h5>
-
-                          <a href="#" class="btn btn-primary">Purchasing</a>
-                        </div>
-                      </div>
-                </div>
+              </div>
             </div>
+          </div>
+            
+                
+          
         </div>
     </div>
 </div>
