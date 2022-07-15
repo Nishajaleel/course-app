@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AddService } from '../add.service';
+
+
 
 @Component({
   selector: 'app-addcourse',
@@ -6,10 +9,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addcourse.component.css']
 })
 export class AddcourseComponent implements OnInit {
+  course={
+       courseTitle:"",
+       courseDuration:"",
+       courseDescription:"",
+       courseDate:"",
+       courseVenue:""
+  }
 
-  constructor() { }
+  constructor(private service:AddService) { }
 
   ngOnInit(): void {
   }
-
+  Addcourse(){
+    this.service.addcourse(this.course)
+    .subscribe((data)=>{
+    })
+    console.log(this.course);
+    alert("Success");
+  
+  }
 }
